@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { ErrorBox } from '../components/ui';
+import { initialOAuthError } from '../lib/supabase';
 
 export default function LoginPage() {
   const { signInWithDiscord } = useAuth();
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(initialOAuthError);
   const [busy, setBusy] = useState(false);
 
   async function go() {
