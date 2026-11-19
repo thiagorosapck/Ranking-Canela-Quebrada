@@ -5,9 +5,9 @@ import { Avatar } from './ui';
 
 const links = [
   { to: '/', label: 'Ranking' },
+  { to: '/perfil', label: 'Perfil' },
   { to: '/dashboard', label: 'Dashboard' },
   { to: '/enviar', label: 'Enviar evidência' },
-  { to: '/perfil', label: 'Perfil' },
   { to: '/hall-da-fama', label: 'Hall da Fama' },
 ];
 
