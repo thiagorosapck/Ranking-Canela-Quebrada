@@ -1,0 +1,16 @@
+project_id = "canela-quebrada-ranking"
+
+[auth]
+site_url = "http://localhost:5173"
+additional_redirect_urls = ["http://localhost:5173", "https://SEU-USUARIO.github.io/NOME-DO-REPO/"]
+
+[auth.external.discord]
+enabled = true
+client_id = "env(DISCORD_CLIENT_ID)"
+secret = "env(DISCORD_CLIENT_SECRET)"
+
+[functions.discord-interactions]
+verify_jwt = false
+
+[functions.discord-notify]
+verify_jwt = true

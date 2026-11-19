@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Canela Quebrada — Mockups</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Crimson+Pro:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<script>
+tailwind.config = { theme: { extend: { colors: {
+  void: {950:'#0a0807',900:'#100d0b',800:'#17120f',700:'#211a15'},
+  gold: {200:'#e9d9a6',300:'#d9c27a',400:'#c0a15a',500:'#a8863f',600:'#86692d',700:'#5e4a20'},
+  blood: {400:'#b83a3a',500:'#8f1f1f',600:'#6e1414',700:'#4a0c0c'}, parch:'#cdbf9f' },
+  fontFamily:{display:['Cinzel','serif'],body:['Crimson Pro','serif'],ui:['Inter','sans-serif']} } } };
+</script>
+<style>
+  body{background:#0a0807 radial-gradient(ellipse at top,rgba(110,20,20,.28),transparent 55%);color:#cdbf9f;font-family:'Crimson Pro',serif}
+  h1,h2,h3{font-family:Cinzel,serif;color:#d9c27a;letter-spacing:.04em}
+  .panel{border:1px solid rgba(94,74,32,.7);background:#17120fe6;border-radius:6px;box-shadow:0 0 24px rgba(143,31,31,.18) inset;padding:1rem}
+  .btn{font-family:Cinzel,serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:.8rem;padding:.5rem 1rem;border-radius:4px;border:1px solid}
+  .gold{background:linear-gradient(#86692d,#5e4a20);border-color:#a8863f;color:#0a0807}
+  .blood{background:linear-gradient(#8f1f1f,#4a0c0c);border-color:#b83a3a;color:#e9d9a6}
+  .ghost{border-color:#5e4a20;color:#d9c27a}
+  th{font:600 11px Inter;text-transform:uppercase;letter-spacing:.08em;color:#a8863f;text-align:left;padding:.5rem .75rem}
+  td{font:400 14px Inter;padding:.6rem .75rem;border-top:1px solid rgba(94,74,32,.3)}
+  .badge{font:600 11px Inter;text-transform:uppercase;border:1px solid;border-radius:999px;padding:2px 8px}
+  .screen{display:none}.screen.on{display:block}
+  .field{width:100%;background:#100d0b;border:1px solid rgba(94,74,32,.8);border-radius:4px;padding:.5rem .75rem;font:14px Inter;color:#e9d9a6}
+  label{display:block;font:500 11px Inter;text-transform:uppercase;letter-spacing:.08em;color:#a8863f;margin-bottom:4px}
+</style>
+</head>
+<body class="min-h-screen">
+<header class="sticky top-0 z-10 border-b border-gold-700/50 bg-void-950/95 px-4 py-3 backdrop-blur">
+  <p class="text-center font-display text-xs uppercase tracking-widest text-gold-500">Mockups — Canela Quebrada Ranking (desktop e mobile)</p>
+  <nav class="mt-2 flex flex-wrap justify-center gap-2 font-ui text-xs">
+    <a class="btn ghost" href="#login">Login</a><a class="btn ghost" href="#ranking">Ranking</a><a class="btn ghost" href="#perfil">Perfil</a>
+    <a class="btn ghost" href="#upload">Upload de Evidência</a><a class="btn ghost" href="#dashboard">Dashboard</a>
+    <a class="btn ghost" href="#hall">Hall da Fama</a><a class="btn ghost" href="#admin">Painel Admin</a>
+  </nav>
+</header>
+
+<main class="mx-auto max-w-6xl px-4 py-8">
+<!-- LOGIN -->
+<section id="login" class="screen">
+  <div class="mx-auto max-w-md panel p-8 text-center">
+    <div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full border-2 border-gold-500 bg-blood-700 text-4xl">⚔️</div>
+    <h1 class="text-3xl font-black tracking-[.2em]">CANELA QUEBRADA</h1>
+    <p class="italic text-lg opacity-70">Ranking Oficial da Liga</p>
+    <hr class="my-6 border-gold-700/50"/>
+    <p class="mb-6">Entre com sua conta do Discord para participar das competições internas do clã.</p>
+    <button class="btn w-full py-3 text-white" style="background:#5865F2;border-color:#5865F2">Entrar com Discord</button>
+    <p class="mt-6 font-ui text-xs opacity-50">Capturamos apenas seu nome, avatar e ID do Discord.</p>
+  </div>
+</section>
+
+<!-- RANKING -->
+<section id="ranking" class="screen">
+  <div class="text-center mb-6"><h1 class="text-3xl font-black tracking-[.25em] sm:text-5xl">CANELA QUEBRADA</h1><p class="italic text-lg opacity-70">Ranking Oficial da Liga</p></div>
+  <div class="panel">
+    <div class="mb-3 flex items-center justify-between"><h2 class="text-xl">Ranking</h2><select class="field !w-44"><option>Liga Atual (ativa)</option></select></div>
+    <div class="overflow-x-auto"><table class="w-full min-w-[720px]">
+      <thead><tr><th>Pos</th><th>Jogador</th><th>Classe</th><th>Level</th><th>Played</th><th>Voidstones</th><th>Status</th><th>Troféu</th></tr></thead>
+      <tbody>
+        <tr class="bg-gold-700/10"><td class="text-lg">🥇</td><td class="text-gold-200 font-semibold">Pikachu <span class="opacity-50 font-normal">· thiago</span></td><td>Deadeye</td><td class="text-gold-200">97</td><td>3d 02h 10m 05s</td><td>4/4 🔮🕳️</td><td><span class="badge border-gold-400 text-gold-200 bg-gold-600/25">Suprema</span></td><td><span class="badge border-gold-500 text-gold-200">👑 Pika Suprema</span></td></tr>
+        <tr class="bg-gold-700/10"><td class="text-lg">🥈</td><td class="text-gold-200 font-semibold">Raichu <span class="opacity-50 font-normal">· ana</span></td><td>Necromancer</td><td class="text-gold-200">92</td><td>2d 20h 03m 41s</td><td>4/4 🔮🕳️</td><td><span class="badge border-emerald-600 text-emerald-300">Completo</span></td><td><span class="badge border-gold-500 text-gold-200">⚡ Pika Turbo</span></td></tr>
+        <tr class="bg-gold-700/10"><td class="text-lg">🥉</td><td class="text-gold-200 font-semibold">Slowpoke <span class="opacity-50 font-normal">· leo</span></td><td>Slayer</td><td class="text-gold-200">90</td><td>5d 11h 22m 00s</td><td>4/4 🔮🕳️</td><td><span class="badge border-emerald-600 text-emerald-300">Completo</span></td><td><span class="badge border-gold-500 text-gold-200">🐌 Cabeça de Pika</span></td></tr>
+        <tr><td>4</td><td class="text-gold-200 font-semibold">Magikarp <span class="opacity-50 font-normal">· duda</span></td><td>Witch</td><td class="text-gold-200">71</td><td>6d 01h 00m 12s</td><td>2/4</td><td><span class="badge border-parch/30">Em progresso</span></td><td><span class="badge border-blood-400 text-red-300">🥀 Pika Murcha</span></td></tr>
+      </tbody></table></div>
+  </div>
+</section>
+
+<!-- PERFIL -->
+<section id="perfil" class="screen">
+  <h1 class="text-3xl font-black mb-4">Perfil do Jogador</h1>
+  <div class="grid gap-6 lg:grid-cols-2">
+    <div class="panel space-y-4">
+      <div class="flex items-center gap-3"><div class="h-14 w-14 rounded-full border border-gold-500 bg-blood-700 flex items-center justify-center font-display text-gold-200 text-xl">T</div>
+        <div class="font-ui text-sm"><p class="text-lg text-gold-200">thiago</p><p class="opacity-60">Discord ID: 123456789012345678</p><p class="opacity-60">Inscrito em 16/11/2026</p></div></div>
+      <div><label>Nome do personagem</label><input class="field" value="Pikachu"/></div>
+      <div class="grid gap-4 sm:grid-cols-2"><div><label>Classe</label><select class="field"><option>Ranger</option></select></div><div><label>Ascendancy</label><select class="field"><option>Deadeye</option></select></div></div>
+      <div><label>League</label><select class="field"><option>Liga Atual</option></select></div>
+      <button class="btn gold">Salvar perfil</button>
+    </div>
+    <div class="panel"><h2 class="text-xl mb-3">Meus envios</h2><ul class="space-y-3 font-ui text-sm">
+      <li class="rounded border border-gold-700/30 p-3"><div class="flex justify-between"><span class="text-gold-200">Lv 97 · 3d 02h 10m 05s</span><span class="badge border-emerald-600 text-emerald-300">Aprovado</span></div><p class="text-xs opacity-50">15/11/2026 21:40</p></li>
+      <li class="rounded border border-gold-700/30 p-3"><div class="flex justify-between"><span class="text-gold-200">Lv 90 · 2d 22h</span><span class="badge border-blood-400 text-red-300">Rejeitado</span></div><p class="text-red-300 mt-1">Motivo: imagem cortada — envie novamente.</p></li></ul></div>
+  </div>
+</section>
+
+<!-- UPLOAD -->
+<section id="upload" class="screen">
+  <h1 class="text-3xl font-black mb-1">Enviar evidência</h1><p class="opacity-70 mb-4">Screenshot do /played com o level visível + prova das Voidstones.</p>
+  <div class="grid gap-6 lg:grid-cols-2">
+    <div class="panel"><h2 class="text-lg mb-3">1 · Screenshot do /played</h2>
+      <div class="rounded border-2 border-dashed border-gold-700 p-8 text-center font-ui text-sm text-gold-400">Arraste ou clique — PNG, JPG ou WEBP até 20 MB</div>
+      <p class="mt-3 font-ui text-sm text-emerald-300">OCR detectou: Level 93 · 3d 02h 10m 05s. Confira abaixo.</p>
+      <div class="mt-3 grid grid-cols-2 gap-4"><div><label>Level</label><input class="field" value="93"/></div><div><label>Voidstones</label><select class="field"><option>4</option></select></div></div>
+      <div class="mt-3 grid grid-cols-4 gap-2"><div><label>Dias</label><input class="field" value="3"/></div><div><label>Horas</label><input class="field" value="2"/></div><div><label>Min</label><input class="field" value="10"/></div><div><label>Seg</label><input class="field" value="5"/></div></div></div>
+    <div class="panel"><h2 class="text-lg mb-3">2 · Comprovação das Voidstones</h2>
+      <div class="space-y-2 font-ui text-sm"><p>☑ Eldritch concluído</p><p>☑ Originator concluído</p><p>☐ Todos os bônus de mapas concluídos</p></div>
+      <div class="mt-4 rounded border-2 border-dashed border-gold-700 p-6 text-center font-ui text-sm text-gold-400">Screenshot que comprova (obrigatório)</div>
+      <button class="btn gold mt-6 w-full py-3">Enviar para validação</button>
+      <p class="mt-3 font-ui text-xs opacity-50">Será publicado em #validacao-ranking no Discord.</p></div>
+  </div>
+</section>
+
+<!-- DASHBOARD -->
+<section id="dashboard" class="screen">
+  <h1 class="text-3xl font-black mb-4">Dashboard</h1>
+  <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
+    <div class="panel"><p class="font-ui text-[11px] uppercase text-gold-500">Participantes</p><p class="font-display text-2xl text-gold-200">18</p></div>
+    <div class="panel"><p class="font-ui text-[11px] uppercase text-gold-500">Média de /played</p><p class="font-display text-2xl text-gold-200">4d 06h</p></div>
+    <div class="panel"><p class="font-ui text-[11px] uppercase text-gold-500">Menor tempo</p><p class="font-display text-2xl text-gold-200">2d 20h</p></div>
+    <div class="panel"><p class="font-ui text-[11px] uppercase text-gold-500">Maior tempo</p><p class="font-display text-2xl text-gold-200">9d 03h</p></div>
+  </div>
+  <div class="mt-6 grid gap-6 lg:grid-cols-2">
+    <div class="panel"><h2 class="text-xl mb-3">Troféus atuais</h2><ul class="space-y-3 font-ui text-sm"><li class="flex justify-between"><span class="badge border-gold-500 text-gold-200">👑 Pika Suprema</span>Pikachu · 3d 02h</li><li class="flex justify-between"><span class="badge border-gold-500 text-gold-200">⚡ Pika Turbo</span>Raichu · 2d 20h</li><li class="flex justify-between"><span class="badge border-gold-500 text-gold-200">🐌 Cabeça de Pika</span>Slowpoke · 5d 11h</li><li class="flex justify-between"><span class="badge border-blood-400 text-red-300">🥀 Pika Murcha</span>Magikarp · 6d 01h</li></ul></div>
+    <div class="panel"><h2 class="text-xl mb-3">Últimas submissões</h2><ul class="space-y-3 font-ui text-sm"><li class="flex justify-between"><span>Pikachu · Lv 97</span><span class="badge border-emerald-600 text-emerald-300">Aprovado</span></li><li class="flex justify-between"><span>Duda · Lv 71</span><span class="badge border-parch/30">Pendente</span></li><li class="flex justify-between"><span>Leo · Lv 88</span><span class="badge border-blood-400 text-red-300">Rejeitado</span></li></ul></div>
+  </div>
+</section>
+
+<!-- HALL -->
+<section id="hall" class="screen">
+  <h1 class="text-3xl font-black mb-4">Hall da Fama</h1>
+  <div class="panel overflow-x-auto"><table class="w-full min-w-[600px]"><thead><tr><th>Liga</th><th>Vencedor</th><th>Troféu</th><th>Data</th><th>Played</th></tr></thead><tbody>
+    <tr><td class="text-gold-200">Liga Anterior</td><td>Pikachu</td><td><span class="badge border-gold-500 text-gold-200">👑 Pika Suprema</span></td><td>01/08/2026</td><td>3d 04h 11m</td></tr>
+    <tr><td class="text-gold-200">Liga Anterior</td><td>Raichu</td><td><span class="badge border-gold-500 text-gold-200">⚡ Pika Turbo</span></td><td>01/08/2026</td><td>2d 23h 40m</td></tr></tbody></table></div>
+</section>
+
+<!-- ADMIN -->
+<section id="admin" class="screen">
+  <h1 class="text-3xl font-black mb-4">Painel Administrativo</h1>
+  <div class="mb-4 flex gap-2"><span class="btn blood">Validação</span><span class="btn ghost">Ligas</span><span class="btn ghost">Jogadores</span></div>
+  <div class="panel"><div class="mb-3 flex flex-wrap justify-between gap-2"><div class="flex items-center gap-2 font-ui text-sm">Duda (duda) <span class="badge border-blood-400 text-red-300">OCR falhou — revisar</span></div><span class="badge border-parch/30">pending</span></div>
+    <div class="grid gap-4 md:grid-cols-2">
+      <div class="h-48 rounded border border-gold-700/40 bg-black flex items-center justify-center font-ui text-xs opacity-50">[screenshot /played]</div>
+      <div class="space-y-3"><div class="grid grid-cols-2 gap-3"><div><label>Level</label><input class="field" value="71"/></div><div><label>Voidstones</label><select class="field"><option>2</option></select></div></div>
+        <div class="grid grid-cols-4 gap-2"><div><label>Dias</label><input class="field" value="6"/></div><div><label>Horas</label><input class="field" value="1"/></div><div><label>Min</label><input class="field" value="0"/></div><div><label>Seg</label><input class="field" value="12"/></div></div>
+        <p class="font-ui text-sm">☐ Eldritch ☐ Originator ☐ Bônus de mapas</p><div><label>Motivo da rejeição</label><input class="field" placeholder="Ex.: imagem cortada"/></div>
+        <div class="flex gap-2"><button class="btn gold flex-1">✅ Aprovar</button><button class="btn blood flex-1">❌ Rejeitar</button></div></div></div></div>
+  <div class="panel mt-6 max-w-lg"><p class="font-ui text-xs uppercase text-gold-500 mb-2">Prévia no Discord — #validacao-ranking</p>
+    <div class="rounded border-l-4 border-gold-500 bg-void-700 p-3 font-ui text-sm"><p class="font-semibold text-gold-200">📜 Nova evidência para validação</p><p>Jogador: Duda · Level 71 · Played 6d 1h 0m 12s</p><div class="my-2 h-24 rounded bg-black/60"></div><div class="flex gap-2"><span class="rounded bg-emerald-700 px-3 py-1 text-white">✅ Aprovar</span><span class="rounded bg-red-700 px-3 py-1 text-white">❌ Rejeitar</span></div></div></div>
+</section>
+</main>
+<script>
+function show(){const id=(location.hash||'#ranking').slice(1);document.querySelectorAll('.screen').forEach(s=>s.classList.toggle('on',s.id===id));window.scrollTo(0,0)}
+addEventListener('hashchange',show);show();
+</script>
+</body>
+</html>
